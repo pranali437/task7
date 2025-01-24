@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+nav {
+  background-color: white;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+.logo {
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  margin-left: 55px;
+  padding-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: inline;
+}
+
+ul li {
+  display: inline;
+  padding: 16px;
+  color: #333;
+  font-size: 25px;
+  position: relative;
+  left: 30%;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.user-info .name {
+  float: right;
+  border: none;
+  background-color: #e8f7ff;
+  border-radius: 19px;
+  padding: 26px 21px;
+  text-align: center;
+  color: #3ba6ec;
+  font-size: 22px;
+  position: relative;
+  top: -41px;
+  margin-right: 69px;
+}
+
+.tag {
+  color: #9ed9ff;
+}
+
+.hero {
+  background-color: #f2f2f2;
+  padding: 130px 0;
+}
+
+.hero-content {
+  float: left;
+  width: 50%;
+  padding: 51px 145px;
+  position: relative;
+  bottom: 10%;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0 16px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: grey;
+}
+
+.book-button {
+  background-color: #197ae2;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 28px 48px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 2px;
+}
+
+.hero-image img {
+  width: 52vh;
+  height: 50vh;
+  position: relative;
+  top: 30%;
+}
+
+.menu-icon {
+  float: right;
+  font-size: 43px;
+  margin-right: 10px;
+  margin-top: -233px;
+  color: black;
+}
+@media (max-width: 620px) {
+  .menu-icon {
+    font-size: 43px;
+    margin-top: 7px;
+    color: black;
+    transition: 0.3 ease;
+    background-color: #fff;
+    border: none;
+  }
+  .active {
+    display: none;
+    position: fixed;
+    top: -100px;
+    left: 86px;
+    width: 86%;
+    height: 100%;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: 0.5s ease;
+  }
+  .active li {
+    list-style: none;
+  }
+
+  .active a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    transition: color 0.5s;
+    margin-right: 0%;
+  }
+  .active li {
+    font-size: 2rem;
+  }
+  .menu-icon:focus + .active {
+    display: block;
+  }
+
+  ul {
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    flex-wrap: wrap-reverse;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    left: -12%;
+  }
+  nav ul li a {
+    font-size: 20px;
+    position: relative;
+    top: 240px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 5%;
+  }
+
+  .hero-content {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
